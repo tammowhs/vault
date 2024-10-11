@@ -11,7 +11,7 @@ router.post(
     body("claims.*").isIn(["tokenize", "detokenize"]),
   ],
   async (
-    req: Request<any, any, { claims: "tokenize" | "detokenize"[] }>,
+    req: Request<any, any, { claims: ("tokenize" | "detokenize")[] }>,
     res: Response
   ) => {
     try {
@@ -25,7 +25,7 @@ router.post(
         { claims: req.body.claims },
         process.env.JWT_SECRET!,
         {
-          expiresIn: "5m",
+          expiresIn: "1h",
         }
       );
 
