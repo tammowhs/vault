@@ -1,0 +1,28 @@
+{
+  "name": "privacy-vault",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node --env-file=.env src/index.ts",
+    "dev": "ts-node-dev --env-file=.env src/index.ts",
+    "build": "tsc",
+    "serve": "node --env-file=.env dist/index.js"
+  },
+  "author": "Tammo Schütte",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2"
+  }
+}
