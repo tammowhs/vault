@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node --env-file=.env src/index.ts",
+    "start": "node --env-file=.env -r ts-node/register src/index.ts",
     "dev": "ts-node-dev --env-file=.env src/index.ts",
     "build": "tsc",
     "serve": "node --env-file=.env dist/index.js"
