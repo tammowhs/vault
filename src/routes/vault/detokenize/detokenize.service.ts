@@ -1,5 +1,5 @@
-import encryptionService from "../../encryption/encryption.service";
-import store from "../../store/store";
+import encryptionService from "../../../helpers/encryption.service";
+import store from "../../../store/store";
 import { DetokenizeRequest, DetokenizeResponse } from "./detokenize.types";
 
 const detokenize = async (

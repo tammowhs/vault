@@ -1,6 +1,6 @@
-import encryptionService from "../../encryption/encryption.service";
-import store from "../../store/store";
-import tokenGenerator from "../token-generator";
+import encryptionService from "../../../helpers/encryption.service";
+import store from "../../../store/store";
+import tokenGenerator from "../../../helpers/token-generator";
 import { TokenizeRequest, TokenizeResponse } from "./tokenize.types";
 
 const tokenize = async (
